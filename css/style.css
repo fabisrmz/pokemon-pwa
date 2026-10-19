@@ -1,64 +1,114 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Navegación */
 nav {
-    background-color: #ef5350;
+    background-color: #db4938;
     color: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+    font-size: 1.5rem;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-weight: 500;
+    cursor: pointer;
 }
 
 h2 {
     text-align: center;
-    margin-top: 1.5rem;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+    color: #222;
 }
 
+/* Contenedor de Tarjetas */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem 3rem 2rem;
 }
 
+/* Tarjeta individual */
 .card {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    padding: 1rem;
-    text-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #f9f9f9;
 }
 
+.card-content {
+    padding: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #db4938;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Botón Ver más */
 .btn-ver-mas {
-    background-color: #ef5350;
+    background-color: #db4938;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: 0.5rem;
+    width: 100%;
+    transition: background-color 0.2s;
 }
 
 .btn-ver-mas:hover {
-    background-color: #d32f2f;
+    background-color: #b83627;
 }
