@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Pokémon</title>
+    <link rel="stylesheet" href="css/detalle.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h1>Pokémon PWA</h1>
+            <a href="index.html">← Regresar</a>
+        </nav>
+
+        <section class="detalle-container">
+            <img id="imagen-pokemon" src="" alt="Pokémon">
+
+            <div class="informacion">
+                <h2 id="nombre-pokemon">Cargando...</h2>
+
+                <div class="datos">
+                    <p><strong>ID:</strong> <span id="id-pokemon"></span></p>
+                    <p><strong>Altura:</strong> <span id="altura-pokemon"></span> dm</p>
+                    <p><strong>Peso:</strong> <span id="peso-pokemon"></span> hg</p>
+                    <p><strong>Tipos:</strong> <span id="tipos-pokemon"></span></p>
+                    <p><strong>Habilidades:</strong> <span id="habilidades-pokemon"></span></p>
+                </div>
+
+                <button onclick="window.location.href='index.html'">
+                    Ver otros Pokémon
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/detalle.js"></script>
+</body>
+
+</html>
