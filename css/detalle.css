@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 body {
@@ -10,46 +10,46 @@ body {
     color: #333;
 }
 
-/* Navegación */
 nav {
     background-color: #db4938;
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
-/* Contenedor del detalle */
 .detalle-container {
-    max-width: 600px;
-    margin: 3rem auto;
+    max-width: 450px;
+    margin: 1.5rem auto;
     background: white;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
+    width: 90%;
 }
 
 .detalle-container img {
-    width: 220px;
-    height: 220px;
+    width: 170px;
+    height: 170px;
     object-fit: contain;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .informacion {
@@ -59,20 +59,21 @@ nav a {
 .informacion h2 {
     text-align: center;
     color: #db4938;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .datos {
     background: #f9f9f9;
-    padding: 1.2rem;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #eee;
 }
 
 .datos p {
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
     color: #555;
 }
 
@@ -88,15 +89,10 @@ button {
     background-color: #db4938;
     color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 1.2rem;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    font-size: 1rem;
-    transition: background-color 0.2s;
-}
-
-button:hover {
-    background-color: #b83627;
+    font-size: 0.95rem;
 }
