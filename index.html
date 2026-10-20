@@ -20,10 +20,27 @@
 <body>
     <main>
         <nav>
+            <!-- Banner flotante para instalar la PWA -->
+<div id="install-banner" class="install-banner hidden">
+    <div class="banner-content">
+        <img src="images/icons/icon-72x72.png" alt="App Icon" class="banner-icon">
+        <div class="banner-text">
+            <strong>Instalar Pokémon PWA</strong>
+            <p>Accede más rápido y úsala sin conexión a internet.</p>
+        </div>
+    </div>
+    <div class="banner-actions">
+        <button id="btn-install" class="btn-install">Instalar</button>
+        <button id="btn-dismiss" class="btn-dismiss">✕</button>
+    </div>
+</div>
             <h1>Pokémon PWA</h1>
             <ul>
                 <li>Inicio</li>
                 <li>Acerca de</li>
+                <li id="nav-install-container" class="hidden">
+            <button id="btn-nav-install" class="btn-nav-install">Instalar App</button>
+        </li>
             </ul>
         </nav>
 
